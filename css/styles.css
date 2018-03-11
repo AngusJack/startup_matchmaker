@@ -1,0 +1,262 @@
+/*
+Colours:
+
+Light yellow:   #FFF653;
+Mid yellow:     #CEC441;
+
+Light grey:     #C6C6C6;
+Mid grey:       #AAAAAA;
+Dark grey:      #999999;
+
+*/
+
+/*******************
+ BASE SETUP
+*******************/
+
+*, *:before, *:after {
+ box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+ content: "";
+ display: table;
+}
+
+.clearfix:after {
+ clear: both;
+}
+
+.container {
+ margin: 0 auto;
+ width: 95%;
+}
+
+/* FONTS */
+
+body {
+	font-family: "Source Sans Pro";
+}
+
+h1,
+.tagline p,
+.teasers h2 {
+	font-family: "Merriweather";
+}
+
+.cta,
+nav li:nth-child(-n+2) a
+{
+	font-family: "Oswald";
+	text-transform: uppercase;
+}
+
+/*GENERAL*/
+
+html {
+	font-size: 22px;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+.cta {
+	color: black;
+	display: block;
+	padding: 10px;
+	text-align: center;
+	border-radius: 5px;
+	font-size:24px;
+}
+
+.cta-yellow {
+	background-color: #FFF653;
+	border-bottom: 3px solid #CEC441;
+}
+
+.cta-grey {
+	background-color: #AAAAAA;
+	border-bottom: 3px solid #999999;
+}
+
+/*HEADER*/
+
+header {
+	background-color: black;
+	padding: 20px 0;
+	border-bottom: 4px solid #FFF653;
+}
+
+h1 {
+	color: #FFF653;
+	margin: 0px;
+	font-size: 36px;
+	float: left;
+	letter-spacing: 1px;
+}
+
+nav {
+	float: right;
+	margin-top: 14px;
+}
+
+nav ul {
+	margin: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+nav a {
+	color: #FFF;
+}
+
+.active-tab {
+	background-color: #AAAAAA;
+	padding: 20px 8px;
+}
+
+/* TAGLINE*/
+
+.tagline {
+	background-color: #C6C6C6;
+	border-top: 2px solid #AAAAAA;
+	padding: 20px 0; 
+	text-align: center;
+	border-bottom: ;
+}
+
+.tagline p {
+	margin: 0;
+	font-size: 28px;
+	font-style: italic;
+}
+
+ins {
+	text-decoration: none;
+	border-bottom: 3px solid #FFF653;
+}
+
+del {
+ 	color: #999;
+}
+
+/* MAIN */
+
+.main {
+	background-image: url("../images/coworking.jpg");
+	background-repeat: no-repeat;	
+	background-size: cover;
+	padding: 20px;
+}
+
+.intro-content {
+	float: right; 
+	/*margin-left: auto;*/ /*It was done this way in class. Why was that? Just to save on HTML (adding in clearfix?)*/
+	width: 350px;
+	background-color: rgba(255,255,255, 0.7);
+	padding: 20px 40px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.intro-content h2 {
+	margin: 10px 0;
+}
+
+.intro-content p {
+	margin: 0 0 30px;
+	line-height: 1.5;
+}
+
+/*TEASERS*/
+
+.teasers-block {
+	float: left;
+	width: 33.3333%;
+	padding: 20px;
+	border-right: 1px solid #C6C6C6;
+}
+
+.teasers-block:nth-child(3) {
+    border-right: none;
+}
+
+.teasers ul {
+	padding: 0;
+	margin: 0;
+}
+
+.teasers {
+	padding: 20px 0;
+}
+
+.teasers-block h2 {
+	margin: 10px 0;
+	line-height: 1.3;
+}
+
+/* FOOTER */
+footer {
+ 	padding: 20px;
+ 	background-color: black;
+ 	color: white;
+}
+
+/* PROFILE PAGE*/
+
+li.profile {
+	/*width: 240.%;*/
+	margin-right: 15px;
+	display: inline-block;
+	padding: 10px 10px;
+	background-color: white;
+	text-align: center;
+	margin-bottom: 15px;
+
+}
+
+.main-grid {
+	background-color: #C6C6C6;
+	padding: 30px 0;
+}
+
+.main-grid p {
+	text-align: left;
+	font-size: 24px;
+	margin: 0;
+}
+
+.main-grid li {
+	display: inline-block;
+	text-align: left;
+}
+
+.skill {
+	background-color: #999999;
+	padding: 1px 20px;
+	border-radius: 12px; 
+	color: white;
+	margin: 5px 5px;
+}
+
+.skills {
+	padding-left: 0;
+	font-size: 17px;
+	margin-bottom: 10px;
+	max-width: 280px;
+}
+
+.margin-collapse {
+	margin: 0;
+	padding-left: 0;
+}
+
+/* Pages seem to look almost perfect at 1341px wide viewport. Anything larger and the right-hand gutter is too wide, anything smaller and the 4th <li> drops out. Sigh. Am I doing something wrong layout wise? Responsive design/grid etc will make this irrelevant? */
