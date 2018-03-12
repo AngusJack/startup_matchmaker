@@ -56,6 +56,8 @@ nav li:nth-child(-n+2) a
 
 html {
 	font-size: 22px;
+	max-width: 1341px; 
+	margin: auto;
 }
 
 a {
@@ -260,3 +262,4 @@ li.profile {
 }
 
 /* Pages seem to look almost perfect at 1341px wide viewport. Anything larger and the right-hand gutter is too wide, anything smaller and the 4th <li> drops out. Sigh. Am I doing something wrong layout wise? Responsive design/grid etc will make this irrelevant? */
+/* UPDATE - I decided to put a max-width and margin auto on the HTML just to see what happens. It kinda works how I wanted, but now I've got big white gutters on any screen larger. Oh well. All learning experience!*/
